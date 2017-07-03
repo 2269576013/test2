@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import utils.Log;
 
 import org.testng.annotations.BeforeMethod;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
@@ -15,8 +16,12 @@ public class Test1 {
 	
   @Test
   public void f() {
-	  driver.get("http://www.baidu.com");
+	  driver.get("http://www.baidu.com");	  
 	  Log.info("baidu is open");
+	  driver.findElement(By.id("kw")).sendKeys("abc");
+	  Log.info("input keyword:abc");
+	  driver.findElement(By.id("su")).click();
+	  Log.info("click baiduyixia button");
   }
   
   @BeforeMethod
