@@ -22,6 +22,8 @@ public class Test1 {
 	  Log.info("input keyword:abc");
 	  driver.findElement(By.id("su")).click();
 	  Log.info("click baiduyixia button");
+	  
+	  
   }
   
   @BeforeMethod
