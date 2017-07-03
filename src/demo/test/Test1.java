@@ -33,6 +33,7 @@ public class Test1 {
   @AfterMethod
   public void afterMethod() {
 	  driver.quit();
+	  Log.info("firefox closed");
   }
 
 }
