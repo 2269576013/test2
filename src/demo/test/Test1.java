@@ -21,9 +21,7 @@ public class Test1 {
 	  driver.findElement(By.id("kw")).sendKeys("abc");
 	  Log.info("input keyword:abc");
 	  driver.findElement(By.id("su")).click();
-	  Log.info("click baiduyixia button");
-	  
-	  
+	  Log.info("click baiduyixia button"); 	  
   }
   
   @BeforeMethod
@@ -37,5 +35,4 @@ public class Test1 {
 	  driver.quit();
 	  Log.info("firefox closed");
   }
-
 }
