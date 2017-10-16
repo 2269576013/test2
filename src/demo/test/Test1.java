@@ -35,4 +35,5 @@ public class Test1 {
 	  driver.quit();
 	  Log.info("firefox closed");
   }
+  
 }

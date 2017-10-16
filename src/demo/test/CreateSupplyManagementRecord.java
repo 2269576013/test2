@@ -19,8 +19,7 @@ public class CreateSupplyManagementRecord {
 	@Test
 	public static void CreateRecord() throws Exception {
 		Log.info("-----------------------------Start----------------------------------");
-		driver.get("http://172.166.100.103:85/");
-		
+		driver.get("http://172.166.100.103:85/");		
 		Log.info("78OA is open");
 		//登录78OA
 		driver.findElement(By.xpath(".//*[@id='account']/div/input")).sendKeys("Admin");
